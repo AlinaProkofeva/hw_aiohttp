@@ -6,4 +6,4 @@ ADD . .
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8080
+#CMD [ "gunicorn", "-c", "gunicorn.conf", "main:get_app" ]

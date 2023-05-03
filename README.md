@@ -2,13 +2,12 @@
 
 # Quickstart
 
-    git clone https://
+    git clone https://github.com/AlinaProkofeva/hw_aiohttp.git
 
 В .env указать переменные окружения
 
     docker-compose -up
-    
-Запустить app.py
+
 
 _____________________
 # Система прав
