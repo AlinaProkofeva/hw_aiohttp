@@ -1,0 +1,28 @@
+version: '3.9'
+
+volumes:
+  pgdata:
+
+services:
+
+  db:
+    image: postgres
+    ports:
+      - "${DB_PORT}:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+#      PGDATA: "/var/lib/postgresql/data/pgdata"
+#    volumes:
+#      - .:/docker-entrypoint-initdb.d
+#      - pgdata:/var/lib/postgresql/data
+
+#  app:
+#    build: .
+#    container_name: backend_aiohttp
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      - db
+#    command: python main.py
